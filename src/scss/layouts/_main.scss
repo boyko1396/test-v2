@@ -1,0 +1,105 @@
+.bgwo6yki91 {
+    background: url(../images/main-bg.jpg) center bottom no-repeat;
+    background-size: cover;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    color: $color-white-1;
+    flex-grow: 1;
+    position: relative;
+    @media (max-width: $lg) {
+        padding: 35px 0;
+    }
+    &__container {
+    }
+    &__brand {
+        margin: 0 0 20px;
+        display: inline-block;
+        font-weight: bold;
+        font-size: var(--fs-3);
+        line-height: 1;
+        text-transform: uppercase;
+        vertical-align: top;
+        transition: all .4s;
+        transition-property: opacity;
+        @media (max-width: $xs) {
+            font-size: 16px;
+        }
+        &:hover {
+            text-decoration: none;
+            opacity: .6;
+        }
+    }
+    &__row {
+        align-items: center;
+    }
+    &__col-content {
+        @media (max-width: $lg) {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    &__col-form {
+        @media (max-width: $lg) {
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+    &__content {
+        padding-right: 20px;
+    }
+    &__title {
+        margin: 0 0 20px;
+        line-height: 1.23;
+        @media (max-width: $xs) {
+            margin-bottom: 10px;
+        }
+    }
+    &__text {
+        margin: 0 0 30px;
+        color: $color-white-2;
+        @media (max-width: $xs) {
+            margin-bottom: 20px;
+        }
+    }
+    &__info {
+        margin: -8px -36px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        @media (max-width: $xs) {
+            padding-bottom: 20px;
+        }
+        &-item {
+            margin: 8px 36px;
+        }
+    }
+}
+
+.tab-pane {
+    &.active:nth-child(1) ~ .bgwo6yki91-form-b__progress {
+        width: 12.5%;
+    }
+    &.active:nth-child(2) ~ .bgwo6yki91-form-b__progress {
+        width: 25%;
+    }
+    &.active:nth-child(3) ~ .bgwo6yki91-form-b__progress {
+        width: 37.5%;
+    }
+    &.active:nth-child(4) ~ .bgwo6yki91-form-b__progress {
+        width: 50%;
+    }
+    &.active:nth-child(5) ~ .bgwo6yki91-form-b__progress {
+        width: 62.5%;
+    }
+    &.active:nth-child(6) ~ .bgwo6yki91-form-b__progress {
+        width: 75%;
+    }
+    &.active:nth-child(7) ~ .bgwo6yki91-form-b__progress {
+        width: 87.5%;
+    }
+    &.active:nth-child(8) ~ .bgwo6yki91-form-b__progress {
+        width: 100%;
+    }
+}
